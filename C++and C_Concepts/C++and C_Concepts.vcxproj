@@ -24,7 +24,7 @@
     <ProjectGuid>{f27c7f6f-cf4c-436f-8b16-4fa7726caff5}</ProjectGuid>
     <RootNamespace>CandCConcepts</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>C++ Concepts</ProjectName>
+    <ProjectName>2 - C++ Concepts</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
