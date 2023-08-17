@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++ Concepts", "C++and C_Concepts\C++and C_Concepts.vcxproj", "{F27C7F6F-CF4C-436F-8B16-4FA7726CAFF5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 - C++ Concepts", "C++and C_Concepts\C++and C_Concepts.vcxproj", "{F27C7F6F-CF4C-436F-8B16-4FA7726CAFF5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C Concepts", "C Concepts\C Concepts.vcxproj", "{E5AFF449-23FC-4BDA-8FB0-7C1A69F5EF9F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1 - C Concepts", "C Concepts\C Concepts.vcxproj", "{E5AFF449-23FC-4BDA-8FB0-7C1A69F5EF9F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Monolithic Program", "Monolithic Program\Monolithic Program.vcxproj", "{3585F809-7017-4EB2-A911-D1D4571BF447}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0001 - Monolithic Program", "Monolithic Program\Monolithic Program.vcxproj", "{3585F809-7017-4EB2-A911-D1D4571BF447}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modular Program", "Modular Program\Modular Program.vcxproj", "{08BED9AE-9BBC-4255-9EBD-EEEF01170A2A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 - Modular Program", "Modular Program\Modular Program.vcxproj", "{08BED9AE-9BBC-4255-9EBD-EEEF01170A2A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Object  Oriented Program", "Object  Oriented Program\Object  Oriented Program.vcxproj", "{5F58CDEA-53EC-4787-AD65-DA86ED26CD1D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001 - Object  Oriented Program", "Object  Oriented Program\Object  Oriented Program.vcxproj", "{5F58CDEA-53EC-4787-AD65-DA86ED26CD1D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenericClass", "GenericClass\GenericClass.vcxproj", "{4EE7ADEA-0723-4D10-8ED8-97CB5E3662A0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 - GenericClass", "GenericClass\GenericClass.vcxproj", "{4EE7ADEA-0723-4D10-8ED8-97CB5E3662A0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursion", "Recursion\Recursion.vcxproj", "{A6C54254-7F7D-4B36-AB0B-946254F3C003}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3 - Recursion", "Recursion\Recursion.vcxproj", "{A6C54254-7F7D-4B36-AB0B-946254F3C003}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays and Array ADT", "Arrays and Array ADT\Arrays and Array ADT.vcxproj", "{5C294CF2-4293-4020-A333-6E405A5CA14D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 - Array ADT", "Array ADT\Array ADT.vcxproj", "{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,22 @@ Global
 		{A6C54254-7F7D-4B36-AB0B-946254F3C003}.Release|x64.Build.0 = Release|x64
 		{A6C54254-7F7D-4B36-AB0B-946254F3C003}.Release|x86.ActiveCfg = Release|Win32
 		{A6C54254-7F7D-4B36-AB0B-946254F3C003}.Release|x86.Build.0 = Release|Win32
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Debug|x64.ActiveCfg = Debug|x64
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Debug|x64.Build.0 = Debug|x64
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Debug|x86.Build.0 = Debug|Win32
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Release|x64.ActiveCfg = Release|x64
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Release|x64.Build.0 = Release|x64
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Release|x86.ActiveCfg = Release|Win32
+		{5C294CF2-4293-4020-A333-6E405A5CA14D}.Release|x86.Build.0 = Release|Win32
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Debug|x64.ActiveCfg = Debug|x64
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Debug|x64.Build.0 = Debug|x64
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Debug|x86.ActiveCfg = Debug|Win32
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Debug|x86.Build.0 = Debug|Win32
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Release|x64.ActiveCfg = Release|x64
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Release|x64.Build.0 = Release|x64
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Release|x86.ActiveCfg = Release|Win32
+		{26F127F9-4BF1-48BF-8DC1-5BC0B7294091}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

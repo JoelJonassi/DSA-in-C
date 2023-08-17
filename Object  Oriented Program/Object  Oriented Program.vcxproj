@@ -24,6 +24,7 @@
     <ProjectGuid>{5f58cdea-53ec-4787-ad65-da86ed26cd1d}</ProjectGuid>
     <RootNamespace>ObjectOrientedProgram</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>001 - Object  Oriented Program</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
