@@ -256,15 +256,117 @@ int* FindDuplicateInStringMaskingMerging(char* str) {
  * Scan the entire hash table and decrement the elements found on arr2 
  * Scan again and check if the hash have -1, 1 means we have duplicated or we have elements on arr2 not on arr1
  *  1 means we have elements on arr1 and not on arr2 and 0 definetly are anagrams
+ *			 100	101		99		105		109		97     108
+ *  A	 = | d	|	e	|	c	|	i	|	m	|	a	|	l	|
+ *			100-97
  * 
+ *			109		101		100		105		99		97		108	 
+ *  B	=  | m	|	e	|	d	|	i	|	c	|	a	|	l	|
  * 
+ * first scan string A
+ *	H = |  1 |   | 1 | 1 | 1 |   |   |   | 1 |  |   | 1 | 1 |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ *		  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25
+ *
+ * Second scan string B
+ *	H = |  0 |   | 0 | 0 | 0 |   |   |   | 0 |  |   | 0 | 0 |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ *		  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25
+ * len = n +n = 2n = O(n)
+ * n + n = 2n = O(n)
+ * Its possible to use bits to check anagrams if the string haven´t repeated values.
+ *  \return 
+ */
+int CheckAnagrams(char* str1, char* str2) {
+	int hash[26] = {0};
+	if (len(str1) != len(str2)) return 0;
+	for (int i = 0; str1[i] != '\0'; i++) {
+		hash[str1[i] - 97]++;
+	}
+	for (int i = 0; str2[i] != '\0'; i++) {
+		hash[str2[i] - 97]--;
+		if (hash[str2[i] - 97] < 0)
+			return 0;
+	}
+	return 1;
+}
+
+
+/**
+ * Permutaions of strings  3! or n!
+ * ABC
+ * ACB
+ * BAC
+ * BCA
+ * CAB
+ * CBA.
+ * string: |	 A		 |		B		|		C		|		\0		|
+ * index:		0				1				2			3
+ *							* State space tree (Backtracking)
+ *							* Brute force (find out all possible permutations)
+ *							* Recursion to achive backtracking with backtracking with are perform bruteforce 
+ *								   /|\
+ *								  / | \
+ *								 /  |  \ 
+ *                              /   |   \
+ *							   /    |    \
+ *							  / 	| 	  \	
+ *							 /		|	   \ 
+ *							/    	|	    \
+ *						   A		B		 C
+ *						  / \       /\      / \
+ *						 B   C	   A  C    B   A
+ *						/	  \    |  |   /     \
+ *					   C	   B   C  A  A       B
+ *					   |	   |   |  |  |       |  
+ *	answer at leaf:	  ABC     ACB BAC|BCA|CBA   CAB		
  * 
  * \return 
  */
-int CheckAnagrams(char* str1, char* str2) {
+void StringPermutation(char* str, int k) {
+	static int A[10] = { 0 };
+	static char result[10];
+	if (str[k] == '\0') {
+		result[k] = '\0';
+		cout<< result<<endl;
+	}
+	else {
+		for (int i = 0; str[i] != '\0'; i++) {
+			if (A[i] == 0) {
+				result[k] = str[i];
+				A[i] = 1;
+				StringPermutation(str, k + 1);
+				A[i] = 0;
+			}
+		}
+	}
 
 }
+
+void Swap(char *x, char *y) {
+	char temp;
+	temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
+void StringPermutation2(char* str, int low, int high) {
+	if (low == high) {
+		cout << str << endl;
+	}
+	else {
+		for (int i = low; i < high; i++) {
+			Swap(&str[i], &str[low]);
+			StringPermutation2(str, low + 1, high);
+			Swap(&str[i], &str[low]);
+		}
+	}
+}
+
+
 int main() {
+	char perm[] = "ABC";
+	//StringPermutation(perm, 0);
+	StringPermutation2(perm, 0, 3);
+
 	char str[] = "JOEL Is A gOOD Engineer";
 	char str2[] = "ddaabbccdeff";
 	char pali[15] = "mbbhhnaccc";
@@ -273,7 +375,9 @@ int main() {
 	for (int i = 0; pali[i] != '\0'; i++) 
 		if(duplicates[i] > 0)
 			cout << (char)duplicates[i] << endl;
-	
+	char medical[] = "medicals";
+	char decimal[] = "decimals";
+	cout <<"Are anagrams? " << CheckAnagrams(medical, decimal) << endl;
 	CountVowelsConsonants(str, &vcount, &ccount);
 	cout << "Count words: " << CountWords(str) << endl;
 	cout << "Count vowels: " << vcount << " Count consonants: " << ccount << endl;
