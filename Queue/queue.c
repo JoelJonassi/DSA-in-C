@@ -19,16 +19,31 @@ void enqueue(Queue* queue, void* data){
 	}else {
 		queue->last->prev = new;
 	}
+	
 	queue->last = new;
+	
 }
 
-bool dequeue(Queue* queue){
+void* dequeue(Queue* queue){
+	void* data = NULL;
+	assert(queue);
+	if(queue->first == NULL)
+		return data;
+	data = queue->first->data;
+	QueueList* last = queue->first->prev;
+	if(last){
+		queue->first = NULL;
+	}else{
+		queue->last = NULL;
+	}
+	free(queue->first);
+	queue->first = last;
 
-	return true;
+	return data;
 }
 
-Queue peek(Queue* queue){
-
+void* peek(Queue* queue){
+	return queue->first->data;
 }
 
 void display(void *data){

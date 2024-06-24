@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
+#include<assert.h>
 
 
 typedef struct _queueList_
@@ -28,8 +29,8 @@ typedef struct _user_{
 
 Queue* new_queue();
 void enqueue(Queue* queue, void* data);
-bool dequeue(Queue* queue);
-Queue peek(Queue* queue);
+void* dequeue(Queue* queue);
+void* peek(Queue* queue);
 void display(void* data);
 void display_list(Queue* queue, void (*display) (void* data));
 

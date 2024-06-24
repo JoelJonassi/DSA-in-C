@@ -13,9 +13,11 @@ int main(){
 	user2->name = "Luís Costa";
 	user2->age = 24;
 	enqueue(queue, user);
-	enqueue(queue, user1);
-	enqueue(queue, user2);
+	//enqueue(queue, user1);
+	//enqueue(queue, user2);
 	display_list(queue, &display);
-	//display(user);
+	dequeue(queue);
+	display(peek(queue));
+	
 	return 1;
 }
