@@ -8,27 +8,30 @@
 #include<stdlib.h>
 
 
-typedef struct _queue_
+typedef struct _queueList_
 {
 	void *data;
-	struct _queue_ *next;
-} Queue;
+	struct _queueList_ *next;
+	struct _queueList_ *prev;
+} QueueList;
 
-typedef struct _queueList_{
+typedef struct _queue_{
 	struct _queueList_ *first;
 	struct _queueList_ *last;
-} QueueList;
+} Queue;
 
 typedef struct _user_{
 	char *name;
 	int age;
 } User;
 
-Queue* new_queue(void *data);
+
+Queue* new_queue();
 void enqueue(Queue* queue, void* data);
 bool dequeue(Queue* queue);
 Queue peek(Queue* queue);
-void Display();
+void display(void* data);
+void display_list(Queue* queue, void (*display) (void* data));
 
 
 #endif

@@ -6,4 +6,4 @@ main.o: main.c queue.h
 queue.o: queue.c queue.h
 	gcc -c queue.c
 clean:
-	rm -f *.o all
+	rm -f *.o  *.c.swo *.c.swp *.h.swp all
