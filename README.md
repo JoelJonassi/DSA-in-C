@@ -1,4 +1,4 @@
-## Master Data structures and Algorithms in C/C++
+## Datastructures and Alghoritms
 
 This thorough course that I took on learning C/C++ algorithms and data structures provides a well-organized, in-depth examination of core ideas that are essential for any aspiring software engineer or programmer. The course is offered through Udemy and offers a comprehensive learning experience by fusing theoretical knowledge with real-world application.
 
@@ -13,7 +13,7 @@ I gain knowledge of greedy algorithms and dynamic programming, two useful strate
 
 > Bad programmers worry about the code. Good programmers worry about data structures and their relationships. Linus Torvalds
 
-### How to Use This Repository:
+### How to navegate on this Repository:
 
 Navigate through the folders to access specific topics.
 Find code implementations, exercises, and additional resources.

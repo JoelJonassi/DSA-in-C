@@ -1,0 +1,6 @@
+# ninja log v6
+0	37	1724190641659613929	build.ninja	f42b8d4c9c21a639
+1	51	1723416698197525561	CMakeFiles/Tree.dir/main.c.o	199ff2a8ec33a99
+2	64	1723416698197525561	CMakeFiles/Tree.dir/tree.c.o	3399232d862ed1a3
+64	96	1723416698261526711	Tree	3ae2f8f4a9d253f
+3	63	1723416698201525633	CMakeFiles/Tree.dir/home/joeljonassi/Documents/Personal_Projects/DataStructreAlghoritmsCandCPlusPlusLearning/Stack/stack.c.o	fc34331d080a23a7
