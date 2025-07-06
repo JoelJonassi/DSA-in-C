@@ -43,3 +43,11 @@ This repository is organized into folders for specific topics. Each folder inclu
 ## Contribute  
 Feel free to explore the repository, experiment with the code, and share your insights! Contributions are welcome—whether it's improving code, adding examples, or sharing new resources. Let's learn and grow together!  
 
+<<<<<<< HEAD
+=======
+Navigate through the folders to access specific topics.
+Find code implementations, exercises, and additional resources.
+
+
+Feel free to contribute to this repository.
+>>>>>>> bee4093 (deletions)
